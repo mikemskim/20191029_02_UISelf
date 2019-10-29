@@ -4,20 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     tools:context=".MainActivity"
     android:background="#088ab7"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:gravity="center">
 
         <ImageView
             android:layout_width="180dp"
             android:layout_height="180dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/tje_logo_1"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/mx_icon_iot18"/>
 
     </LinearLayout>
 
@@ -25,6 +28,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="아이디"
         android:textSize="16sp"
         android:textColor="#FFFFFF"/>
@@ -53,6 +57,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:hint="비밀번호"
         android:textColorHint="#FFFFFF"
         android:textSize="25sp"
@@ -62,6 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -80,15 +86,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="150dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="회원가입"/>
 
         <Button
-            android:layout_width="150dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="로그인"/>
 
